@@ -1,0 +1,223 @@
+
+html {
+    font-family: sans-serif;
+    background: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 42.5rem;
+    grid-gap: 30px;
+}
+
+.left {
+    background-color: rgb(250, 250, 251);
+    border-radius: 0.5rem;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.left .avatar {
+    background-size: cover;
+    width: 40%;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -34rem;
+    bottom: 0;
+    margin: auto auto;
+
+}
+.left h2 {
+    position: absolute;
+    top: 9rem;
+    color: rgb(53, 68, 89);
+    
+}
+
+.left p {
+    position: absolute;
+    top: 12.8rem;
+    background-color: rgb(236, 236, 244);
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: rgb(76, 90, 109);
+    text-transform: capitalize;
+}
+.social-links {
+    position: absolute;
+    top: 17.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-links a {
+    padding: 0 8px;
+}
+
+.social-links img {
+    width: 30px;
+}
+
+.contact {
+    text-align: justify;
+    position: absolute;
+    top: 24rem;
+    width: 100%;
+    background-color: rgb(241, 242, 243);
+}
+
+.location-container {
+    margin: 10px 22%;
+}
+.location {
+    width: 18px;
+}
+.location-container span {
+    bottom: 0.4rem;
+    display: inline-block;
+    position: relative;
+    color: rgb(84, 98, 117);
+    font-size: smaller;
+   
+}
+
+.git-container {
+    margin: 10px 22%;
+}
+
+.git {
+    width: 18px;
+}
+.git-container span {
+    bottom: 0.2rem;
+    display: inline-block;
+    position: relative;
+    color: rgb(84, 98, 117);
+}
+.git-container span a {
+    text-decoration: none;
+    color: rgb(84, 98, 117);
+    font-size: small;
+    position: relative;
+    bottom: 0.2rem;
+    text-transform: capitalize;
+    left: 6px;
+}
+
+.email-container {
+    margin: 10px 22%;
+    position: absolute;
+    top: 9rem;
+}
+
+.email-contact{
+    color: rgb(215, 232, 252);
+    text-align: center;
+    padding: 10px 18px;
+    background: #256af3;
+    background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
+    background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
+    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+    border-radius: 24px;
+    padding: 12px 48px;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1230px) {
+   
+    body {
+        height: auto;
+        min-height: 1190px !important;
+        margin: 05%;
+    }
+    
+    .container {
+        position: sticky;
+        top: 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        height:37rem;
+        grid-gap: 30px;
+        background-color: #ffffff;
+        border-radius: 20px;
+    }
+    
+
+    .left .avatar {
+        background-size: cover;
+        width: 6.7rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -28rem;
+       
+    
+    }
+
+    .contact {
+        display: grid;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+    }
+   
+    .email-container {
+        margin: 10px 22%;
+        position: relative;
+        top: -1rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .location-container,
+    .git-container {
+        position: relative;
+        right: 1.8rem;
+        padding: 5px 0;
+    }
+    .email-contact {
+        color: rgb(215, 232, 252);
+        text-align: center;
+        padding: 10px 18px;
+        background: #256af3;
+        background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
+        background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
+        background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+        border-radius: 24px;
+        padding: 12px 28px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        display: block;
+        padding: 20px 0;
+    }
+    .email-container {
+        font-size: large;
+    }
+   
+    
+}
