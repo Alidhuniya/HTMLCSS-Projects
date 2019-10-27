@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 2em;
+  background: #eaf0f1;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+/* element>element	div > p	Selects all <p> elements where the parent is a <div> element */
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+ul {
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+
+nav ul li {
+  list-style: none;
+  flex: 1 100%;
+  justify-content: flex-start;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  display: flex;
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+/* Meia Query rule: https://dev.to/nedsoft/css-media-query-pro-tips-3i80 */
+@media screen and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
