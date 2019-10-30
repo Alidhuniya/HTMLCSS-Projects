@@ -1,96 +1,74 @@
 * {
-    font-family: sans-serif;
-    background-color: #E9EBEE;
-    margin:0;
+  font-family: sans-serif;
+  background-color: #e9ebee;
+  margin: 0;
 }
 
 :root {
-    --fasfab-height: 35px;
-    --fasfab-width: 35px;
-    --fasfab-position: relative;
+  --fasfab-height: 35px;
+  --fasfab-width: 35px;
+  --fasfab-position: relative;
 }
-
-
 
 .sidebar {
-   display: flex;
-   position: fixed;
-   margin-top: 4em;
-    top: 0;
-    bottom: 0;
-    width: 300px;  
-    
-        
+  display: flex;
+  position: fixed;
+  margin-top: 4em;
+  top: 0;
+  bottom: 0;
+  width: 300px;
 }
-.fa-globe-americas {
-    width: 60px;
-    height: 60px;
-}
+
 .sidebar::-webkit-scrollbar {
-    
-    width: 0.5em;
+  width: 0.5em;
 }
- 
+
 .sidebar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 .sidebar::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
 
 .sidebar:hover {
-    overflow-y: auto;
-    
+  overflow-y: auto;
 }
 
-
-
-ul  {
-    list-style: none;
-    
+ul {
+  list-style: none;
 }
 ul li {
-    flex-direction: column;
-     
+  flex-direction: column;
 }
-
 
 ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    
-   
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-ul li  a:hover{
-    
-   background: #f5f6f7;
-    border: 2px solid #dddfe2;
-    border-radius: 2px;
-    content: '';
-    z-index: 1;
+ul li a:hover {
+  background: #f5f6f7;
+  border: 2px solid #dddfe2;
+  border-radius: 2px;
+  content: "";
+  z-index: 1;
+}
 
-  
-    
-} 
-
-.fas, .fab {
-    height:Var(--fasfab-height);
-    width: var(--fasfab-width);
-    position: var(--fasfab-position);
-    
+.fas,
+.fab {
+  height: Var(--fasfab-height);
+  width: var(--fasfab-width);
+  position: var(--fasfab-position);
 }
 .fas {
-    margin: 40px 0px 10px 40px;
-   
+  margin: 40px 0px 10px 40px;
 }
 .fab {
-    margin: 0px 0px 10px 40px;
-   
+  margin: 0px 0px 10px 40px;
 }
 
 .link-clr {
-   color: #1d2129;
+  color: #1d2129;
 }
