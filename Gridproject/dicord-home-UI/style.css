@@ -1,0 +1,253 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --minisidebar: #202225;
+  --sidebar: #2f3136;
+  --menuscolor: #36393f;
+}
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+.mini-sidebar img,
+i {
+  border-radius: 50%;
+  width: 48px;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 90px 240px 1fr;
+  grid-template-areas: "minisidebar sidebar menus";
+}
+
+.mini-sidebar {
+  position: fixed;
+  width: 90px;
+  height: 100%;
+  grid-area: minisidebar;
+  background-color: var(--minisidebar);
+  display: grid;
+  grid-auto-rows: 90px;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--sidebar);
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  margin-left: 5em;
+  display: grid;
+  grid-template-columns: 250px;
+  grid-auto-rows: 30px;
+  grid-gap: 50px;
+}
+.searchconv {
+  overflow: hidden;
+  background-color: #202225;
+  width: 220px;
+  height: 40px;
+  border: 1px solid #202225;
+  /* margin-bottom: 5px; */
+  margin: 6px 5px;
+}
+.searchbar {
+  position: relative;
+  width: 240px;
+  height: 55px;
+  border-bottom: 5px solid black;
+}
+.inputtext {
+  width: 220px;
+  height: 28px;
+  padding: 0px 4px;
+}
+.txt {
+  background: transparent;
+  border: none;
+  resize: none;
+  width: 178px;
+  padding: 0px 4px;
+  margin: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #dcddde;
+}
+
+.profile {
+  position: fixed;
+  width: 15%;
+  bottom: 0;
+  border-top: 50px solid var(--sidebar);
+  background: var(--sidebar);
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-auto-rows: auto;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+h5 {
+  color: #fff;
+}
+h6 {
+  color: #b9bbbe;
+}
+svg {
+  color: #dcddde;
+}
+
+.sidebar-icons svg,
+h2 {
+  color: #8a8e93;
+  margin-left: 30px;
+}
+.sidebar-icons svg:hover,
+h2:hover {
+  color: #dcddde;
+}
+.sidebar-icons div:hover {
+  background: #393c43;
+  border-radius: 4px;
+  width: 224px;
+  height: 30px;
+  cursor: pointer;
+}
+.sidebar-icons h2 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-left: 80px;
+  margin-top: -27px;
+}
+
+.sidebar-icons {
+  display: grid;
+  grid-template-columns: 112px;
+  grid-template-rows: 42px 42px 42px 42px;
+}
+
+.messages div img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border-radius: 50%;
+  color: #5c5e64;
+}
+.h3heading h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  margin-left: 15px;
+  color: #5c5e64;
+  margin-top: 90px;
+}
+.messages h4 {
+  color: #5c5e64;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-left: 80px;
+  margin-top: -27px;
+}
+.messages img {
+  margin-left: 30px;
+}
+.messages {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 112px;
+  grid-template-rows: 40px 40px;
+  grid-row-gap: 5px;
+}
+
+/* last column */
+
+.menus {
+  grid-area: menus;
+  background: var(--menuscolor);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 137px;
+  grid-template-rows: 48px 34.6px auto;
+  grid-template-areas: "friends online all pending blocked add . . . . . corner";
+}
+.menus > * {
+  align-self: center;
+}
+.aligning {
+  justify-self: flex-end;
+}
+.default {
+  color: #7e8287;
+}
+.setcol {
+  color: #fefefe;
+}
+.clr {
+  background: #43b581;
+  font-weight: 600;
+}
+button {
+  border: 2px solid green;
+  border-radius: 15%;
+  width: 80px;
+  height: 35px;
+}
+.frnd {
+  grid-area: friends;
+  display: grid;
+  grid-template-columns: 47px 1fr;
+}
+.corner {
+  grid-area: corner;
+  display: grid;
+  grid-template-columns: 45.6px 45.6px auto;
+  margin-top: 10px;
+}
+
+.header2 {
+  margin-left: 350px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  border-top: 50px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.header2 > * {
+  color: #7e8287;
+}
+.col-1 {
+  flex: 1 0 100px;
+}
+.col-2 {
+  flex: 10 0 300px;
+  margin-left: 140px;
+}
+.col-3 {
+  flex: 10 0 300px;
+}
+
+.taddy {
+  margin-left: 650px;
+  margin-top: 300px;
+}
