@@ -1,6 +1,6 @@
 # [Demo](https://alidhuniya.github.io/Discord-home-UI-clone/)
 
-## my official dicord-home-UI
+## my official discord-home-UI
 
 ![Official](img/official.png)
 
