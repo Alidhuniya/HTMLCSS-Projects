@@ -1,3 +1,11 @@
 # HTMLCSS-Projects
 ## Mini and Major projects in pure CSS using Flexbox, Grid, CSS variables, Methodology, CSS3 Features
 
+### projects
+
+## [Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
+
+## [Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/dicord-UI/)
+
+
+
