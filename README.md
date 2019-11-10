@@ -3,9 +3,9 @@
 
 ### projects
 
-##[Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
+## [Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
 
-##[Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/dicord-UI/)
+## [Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/dicord-UI/)
 
 
 
