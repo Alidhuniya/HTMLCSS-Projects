@@ -5,7 +5,9 @@
 
 ## [Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
 
-## [Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/dicord-UI/)
+## [Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discordSidebar-UI/)
+
+## [sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Sidebar/youtubetype/)
 
 
 
