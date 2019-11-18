@@ -4,11 +4,17 @@ html {
   margin: 0;
   padding: 0;
 }
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
 .wrapper {
   width: 100%;
   max-width: 1300px;
-  margin: 0 ;
+  margin: 10px;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +27,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 42.5rem;
+ 
   grid-gap: 30px;
 }
 
@@ -59,6 +66,12 @@ html {
   color: rgb(76, 90, 109);
   text-transform: capitalize;
 }
+
+.slogan {
+  position: absolute;
+  top: 22.4rem;
+  color: #5A6879;
+}
 .social-links {
   position: absolute;
   top: 18.5rem;
@@ -84,32 +97,9 @@ html {
 }
 
 .location-container, .git-container {
-  margin: 10px 22%;
-}
-/* .location {
-  width: 18px;
-} */
-.location-container span {
-  bottom: 0.4rem;
-  /* display: inline-block; */
-  position: relative;
-  color: rgb(84, 98, 117);
-  font-size: smaller;
+  margin: 10px 29%;
 }
 
-/* .git-container {
-  margin: 10px 22%;
-} */
-
-/* .git {
-  width: 18px;
-} */
-.git-container span {
-  bottom: 0.2rem;
-  /* display: inline-block; */
-  position: relative;
-  color: rgb(84, 98, 117);
-}
 .git-container,
 .location-container,
 span a {
@@ -117,13 +107,12 @@ span a {
   color: rgb(84, 98, 117);
   font-size: small;
   position: relative;
-  bottom: 0.2rem;
+  
   text-transform: capitalize;
-  left: 6px;
-}
+  
+} 
 
 .email-container {
-  /* margin: 10px 22%; */
   position: absolute;
   top: 40rem;
 }
@@ -169,7 +158,7 @@ span a {
     top: -28rem;
   }
 
-  .contact {
+  /* .contact {
     display: flex;
     justify-content: space-between;
     border-radius: 0 0 20px 20px;
@@ -179,21 +168,19 @@ span a {
     text-align: center;
    
   }
- 
+  */
+  .contact {
+    display: block;
+    text-align: justify;
+    position: absolute;
+    top: 29rem;
+    width: 100%;
+    background-color: rgb(241, 242, 243);
+  }
   
-  /* .location-container, .git-container, span {
-    margin-top: 10px;
-   
-    
-  } */
-
-  /* .location-container,
-  .git-container {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-  } */
- 
+  .location-container, .git-container {
+    margin: 10px 43%;
+  }
 
   .email-contact {
     color: rgb(215, 232, 252);
@@ -207,13 +194,17 @@ span a {
     padding: 12px 28px;
     display: flex;
     justify-content: center;
-    margin-top: -6rem;
+    margin-top: -5.8rem;
     position: static;
+    margin-left: -44px;
   
   }
 }
+@media all and () {
 
-@media only screen and (max-width: 600px) {
+}
+
+@media screen and  (max-width: 1066px) {
   .contact {
     display: block;
     padding: 20px 0; 
@@ -233,9 +224,10 @@ span a {
     padding: 12px 28px;
     display: flex;
     justify-content: center;
-    margin-top: -1.9rem;
+    margin-top: -13.9rem;
     position: static;
-    /* width: 10rem; */
+    margin-left: -7px;
+    
   }
  
 }
