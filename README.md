@@ -3,6 +3,8 @@
 
 ### projects
 
+## [lounge-bar](https://alidhuniya.github.io/HTMLCSS-Projects/lounge-bar/)
+
 ## [Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
 
 ## [Discord-sidebar](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discordSidebar-UI/)
