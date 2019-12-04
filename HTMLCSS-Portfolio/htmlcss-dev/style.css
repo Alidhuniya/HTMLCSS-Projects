@@ -13,8 +13,8 @@ html {
 
 .wrapper {
   width: 100%;
-  max-width: 1300px;
-  margin: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 90vh;
   display: flex;
   flex-direction: column;
