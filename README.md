@@ -3,6 +3,8 @@
 
 ### projects
 
+## [bootcamp-event](https://alidhuniya.github.io/HTMLCSS-Projects/bootcamp-event/)
+
 ## [lounge-bar](https://alidhuniya.github.io/HTMLCSS-Projects/lounge-bar/)
 
 ## [Discord-home-UI](https://alidhuniya.github.io/HTMLCSS-Projects/Gridproject/discord-home-UI/)
