@@ -254,9 +254,48 @@ body.light-mode button {
     font-size: 1.1rem;
   }
 }
+/* search bar */
+.navbar__search-container {
+  align-self: center;
+  
+}
 
+form input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 1.2rem;
+  border: none;
+}
+.navbar__search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: -72px;
+  background: #ddd;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
 /* tablet */
 @media all and (min-width: 768px) and (max-width: 1199px) {
+  /* search-bar */
+  
+  .navbar__search-container {
+    margin-left: -7rem;
+  }
+form input[type=text] {
+ 
+  font-size: 0.9rem;
+  
+}
+.navbar__search-container button {
+
+  font-size: 0.9rem;
+ 
+}
 }
 
 /* desktop */
