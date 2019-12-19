@@ -24,7 +24,6 @@ html {
 :root {
   --primaryColor: #000;
   --secondaryColor: #fff;
- 
 }
 
 /* spalsh-screen */
@@ -169,99 +168,97 @@ html {
 
 /* sticky-Navbar */
 /* this is main-parent in which navbar is included that's why it's working */
-.wrapper{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+.wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 /* if you set the sticky position here then it will not work because it's not a main-parent */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #dcb0ff;
+  padding: 0 30px 0 30px;
+  /* position: -webkit-sticky;
+      position: sticky;
+      top: 0; */
+  box-shadow: 0px 1.5px 12px blueviolet;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(122, 63, 218);
+  font-size: 1.5rem;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: #6a696c;
+}
+
+.logo,
+.logoIcon {
+  width: 110px;
+  vertical-align: middle;
+}
+/* dark-mode */
+body.dark-mode {
+  background-color: #eee;
+  color: #111;
+}
+body.light-mode {
+    background-color: #111;
+    color: #eee;
+  }
+body.dark-mode a {
+  color: #111;
+}
+body.dark-mode button {
+  background-color: #eee;
+  color: #111;
+}
+
+
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  background-color: #111;
+  color: #eee;
+}
+
+.fa-moon {
+    cursor: pointer;  
+}
+/* mobile */
+@media all and (max-width: 767px) {
+  .navbar {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color:#DCB0FF ;
-    padding: 0 30px 0 30px;
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 0; */
-    box-shadow: 0px 1.5px 12px blueviolet;
   }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
   .nav-item a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color:rgb(122, 63, 218);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
-  
-  
-  .nav-item:hover {
-    background-color: white;
-  }
-  
-  .nav-item:hover a {
-    color: #6a696c;
-  }
-  
-  .logo, .logoIcon {
-    width: 110px;
-    vertical-align: middle;
-  }
-  /* dark-mode */
-  body.dark-mode {
-    background-color: #111;
-    color: #eee;
-  }
-  body.dark-mode a {
-    color: #111;
-  }
-  body.dark-mode button {
-    background-color: #eee;
-    color: #111;
-  }
-  
-  body.light-mode {
-    background-color: #eee;
-    color: #111;
-  }
-  body.light-mode a {
-    color: #111;
-  }
-  body.light-mode button {
-    background-color: #111;
-    color: #eee;
-  }
-  
+}
 
-  /* mobile */
-  @media all and (max-width:767px){
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        
-      }
-      .nav-item a {
-          font-size: 1.1rem;
-      }
-     
-  }
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 1199px) {
+}
 
-  /* tablet */
-  @media all and (min-width:768px) and (max-width:1199px){
-
-  }
-
-  /* desktop */
-  @media all and (min-width:1200px){
-
-  }
-  
+/* desktop */
+@media all and (min-width: 1200px) {
+}
