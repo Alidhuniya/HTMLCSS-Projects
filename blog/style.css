@@ -242,6 +242,12 @@ body.light-mode button {
 .fa-moon {
     cursor: pointer;  
 }
+
+.mainWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* mobile */
 @media all and (max-width: 767px) {
   .navbar {
