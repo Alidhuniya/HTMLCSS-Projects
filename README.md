@@ -1,7 +1,13 @@
 # HTMLCSS-Projects
 ## Mini and Major projects in pure CSS using Flexbox, Grid, CSS variables, Methodology, CSS3 Features
 
-### projects
+## projects
+
+## [transaction-email](https://alidhuniya.github.io/HTMLCSS-Projects/Emaildeve-Foundation/transaction-email/)
+
+## [promotional-email](https://alidhuniya.github.io/HTMLCSS-Projects/Emaildeve-Foundation/promotional/)
+
+## [newsletter-email](https://alidhuniya.github.io/HTMLCSS-Projects/Emaildeve-Foundation/newsletter/)
 
 ## [bootcamp-event](https://alidhuniya.github.io/HTMLCSS-Projects/bootcamp-event/)
 
