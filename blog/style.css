@@ -274,7 +274,7 @@ form input[type="text"] {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  
+
   /* flex-wrap: wrap; */
 }
 .posts {
@@ -378,7 +378,7 @@ form input[type="text"] {
 }
 
 .aside__h2 {
-text-align: center;
+  text-align: center;
 }
 
 .aside__h3 {
@@ -395,13 +395,11 @@ text-align: center;
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  
+
   cursor: pointer;
-  
-  
 }
 
- .aside__icons i:hover {
+.aside__icons i:hover {
   color: blueviolet;
 }
 .aside__h4 {
@@ -409,18 +407,17 @@ text-align: center;
   margin-top: 1rem;
 }
 
-/* footer */ 
+/* footer */
 .foot {
   height: 2px;
-  
- 
 }
-.foot__icons{
-  background-color: #DCB0FF;
+.foot__icons {
+  background-color: #dcb0ff;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+  margin-top: 1rem;
 }
 
 .foot__h1 {
@@ -428,7 +425,13 @@ text-align: center;
   color: blueviolet;
   font-weight: bold;
 }
-
+.foot li img {
+  width: 91px;
+  height: 40px;
+}
+.foot__gatsby {
+  align-self: center;
+}
 
 /* mobile */
 @media all and (max-width: 767px) {
@@ -441,14 +444,14 @@ text-align: center;
   .nav-item a {
     font-size: 1.1rem;
   }
-   /* aside */
-   .mainWrapper {
+  /* aside */
+  .mainWrapper {
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    
+
     /* flex-wrap: wrap; */
   }
   .posts {
@@ -457,6 +460,10 @@ text-align: center;
   }
   .aside__h3 {
     text-align: center;
+  }
+  .foot__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -480,7 +487,7 @@ text-align: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    
+
     /* flex-wrap: wrap; */
   }
   .posts {
@@ -490,22 +497,21 @@ text-align: center;
   .aside__h3 {
     text-align: center;
   }
-
 }
 
 /* desktop */
 @media all and (min-width: 1200px) {
 }
 /* for sidebar */
-@media all and (min-width:1540px){
-   /* aside */
-   .mainWrapper {
+@media all and (min-width: 1540px) {
+  /* aside */
+  .mainWrapper {
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    
+
     /* flex-wrap: wrap; */
   }
   .posts {
