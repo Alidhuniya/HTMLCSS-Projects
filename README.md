@@ -3,6 +3,8 @@
 
 ## projects
 
+## [blog](https://alidhuniya.github.io/HTMLCSS-Projects/blog/)
+
 ## [transaction-email](https://alidhuniya.github.io/HTMLCSS-Projects/Emaildeve-Foundation/transaction-email/)
 
 ## [promotional-email](https://alidhuniya.github.io/HTMLCSS-Projects/Emaildeve-Foundation/promotional/)
