@@ -107,17 +107,4 @@ html {
   cursor: pointer;
 }
 
-/* tablet */
-/* @media all and (min-width: 768px) and (max-width: 1199px) {
-  .wrapper__table{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .wrapper__title > h3,.wrapper__delete > button,.wrapper__edit > button{
-    font-size: 1rem;
-    line-height: 2rem;
-  }
- 
-}
- */
+
