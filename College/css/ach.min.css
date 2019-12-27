@@ -121,6 +121,12 @@ nav {
           margin-top: 12.5rem;
       }
   }
+  @media all and (max-width:768px){
+    .row{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
 .our-team {
   padding: 30px 0 40px;
   background: #eaf0f1;
