@@ -1,0 +1,117 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    font-size: 15px;
+    
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primaryColor:#ff5e14;
+    --secondaryColor:#262626;
+  }
+  /* top-header */
+  .navHeader {
+    padding: 15px 0 14px;
+    background: #f3f3f3;
+    color: #fff;
+    font-size: 15px;
+   
+  }
+  .navHeader__language {
+    padding: 0 0 0 8.5rem;
+  }
+  .fa-globe{
+    font-size: 18px;
+   
+  }
+  .fa-arrow-alt-circle-down{
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    padding: 0 0 0 0.4rem;
+  }
+  .navHeader__h3 {
+    color:#b5b5b5;
+  }
+  /* dropdown-style */
+  .navHeader__dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .navHeader__dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 0.7rem;
+  }
+  
+  .navHeader__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+  }
+  
+  .navHeader__dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navHeader__dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .navHeader__dropdown:hover .navHeader__dropdown-content {
+    display: block;
+  }
+  
+  /* topHeader-social icons */
+.navHeader__socialIcons > .navHeader__element,.navHeader__icons{
+ color:#b5b5b5;
+ margin-top: -1rem;
+ padding: 0 1rem 0 1.3rem;
+}
+
+.navHeader__icons > i {
+  cursor: pointer;
+  padding: 0 1rem 0 1.3rem;
+}
+.navHeader__icons > i:hover {
+  color: var(--primaryColor);
+}
+
+.navHeader__socialIcons {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+/* media query for top-header */
+@media all and (max-width:768px){
+  .navHeader__language{
+    display: flex;
+    justify-content: center;
+  }
+  .navHeader__socialIcons   {
+    margin-top: 2rem;
+  }
+  .navHeader__h4 {
+    text-align: center;
+  }
+}
