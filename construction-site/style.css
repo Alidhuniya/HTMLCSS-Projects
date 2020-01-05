@@ -473,7 +473,7 @@ html {
   }
 }
 /* services */
-.services{
+.services {
   padding-bottom: 4rem;
 }
 .services__h1,
@@ -506,7 +506,9 @@ html {
   height: 353px;
 }
 
-.services__icon,.services__h,.services__link {
+.services__icon,
+.services__h,
+.services__link {
   color: var(--primaryColor);
   text-decoration: none;
 }
@@ -521,7 +523,7 @@ html {
   padding-top: 14px;
   line-height: 23px;
 }
-.services__link{
+.services__link {
   font-size: 1.3rem;
   padding-left: 6rem;
   font-weight: 900;
@@ -530,16 +532,16 @@ html {
   text-align: center;
   padding-top: 2rem;
 }
-.services__containerDiv--hover:hover{
+.services__containerDiv--hover:hover {
   border: 1px solid transparent;
-  background-color: #FFC174;
+  background-color: #ffc174;
   color: #fff;
-  -webkit-box-shadow: 0px 4px 51px -17px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 4px 51px -17px rgba(0,0,0,.9);
-  box-shadow: 0px 4px 51px -17px rgba(0,0,0,.9);
-  transition: .2s ease;
+  -webkit-box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.9);
+  transition: 0.2s ease;
 }
-@media all and (max-width:1060px){
+@media all and (max-width: 1060px) {
   .services__container1 {
     display: flex;
     justify-content: center;
@@ -551,4 +553,45 @@ html {
   .services__containerDiv {
     margin-top: 1rem;
   }
+}
+/* services-container-2 */
+.services__container2 {
+  padding-top: 4rem;
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.services__containerDiv2 {
+  width: 200px;
+  height: 170px;
+  border: 1px solid #f1e7e7;
+  text-align: center;
+  margin: 1rem;
+  -webkit-box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 51px -17px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.services__iconDiv1 {
+  width: 200px;
+  height: 128px;
+  padding-top: 2.3rem;
+  color: var(--primaryColor);
+  font-size: 52px;
+  line-height: normal;
+  background-color: #f7f7f7;
+}
+.services__iconDiv1:hover {
+  color: #f0972a;
+}
+.services__btm-heading {
+  padding-top: 0.6rem;
+  
+}
+.services__heading {
+ color:#262626;
+  font-weight: 900;
+  text-transform: uppercase;
 }
