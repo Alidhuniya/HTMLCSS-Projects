@@ -122,6 +122,7 @@ html {
 
 /* Main-Navbar */
 .mainNavbar {
+ 
   height: 110px;
   background: #fff;
   top: 0;
@@ -562,7 +563,7 @@ html {
   grid-column-gap: 23rem;
   padding-top: 1rem;
   padding-left: 13.5rem;
-  justify-items: baseline;
+  justify-items: center;
 }
 
 .services__containerDiv1 {
@@ -595,11 +596,37 @@ html {
 .services__containerDiv1prg {
   padding-top: 0.7rem;
 }
-/* .services__manImg{
-  
-  display: flex;
-  justify-content: flex-end;
-} */
+@media all and (max-width: 1300px) {
+  .services__container1 {
+    display: grid;
+    grid-template: repeat(1, 380px) / repeat(2, 380px);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 10rem;
+    padding-top: 1rem;
+    padding-left: 13.5rem;
+    justify-items: center;
+  }
+}
+@media all and (max-width: 1045px) {
+  .services__container1 {
+    display: grid;
+    grid-template: repeat(1, 380px) / repeat(2, 380px);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5rem;
+    padding-top: 1rem;
+    padding-left: 4.5rem;
+    justify-items: center;
+  }
+}
+@media all and (max-width: 800px) {
+  .services__container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+    padding-left: 3.5rem;
+  }
+}
 
 /* services-container-2 */
 .services__container2 {
@@ -640,4 +667,66 @@ html {
   color: #262626;
   font-weight: 900;
   text-transform: uppercase;
+}
+/* projects */
+.projects {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.projects__nav1 {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 1.5rem;
+  padding-left: 5rem;
+  cursor: pointer;
+}
+.projects__prg {
+  padding-left: 0.8rem;
+  color: var(--secondaryColor);
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-self: center;
+}
+.projects__icons {
+  font-size: 1.7rem;
+  color: #616060;
+}
+.projects__nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2.3rem;
+}
+.projects__hr {
+  margin-left: 16rem;
+  margin-right: 12rem;
+}
+.projects__activeColor {
+  color: var(--primaryColor);
+}
+ .projects__icons:hover,.projects__prg:hover {
+  color: var(--primaryColor);
+}
+@media all and (max-width:1445px){
+  .projects__hr {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+  }
+}
+.projects__gallery {
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(4,1fr);
+  justify-items: center;
+  grid-row-gap: 2rem;
+}
+.projects__gallery > * {
+  padding: 2rem;
+}
+@media all and (max-width:1070px){
+  .projects__gallery {
+   display: flex;
+   justify-content:space-around;
+   flex-wrap: wrap;
+  }
 }
