@@ -730,3 +730,50 @@ html {
    flex-wrap: wrap;
   }
 }
+
+/* whyUs page */
+.whyUs {
+  padding-bottom: 5rem;
+}
+.whyUs__heading2 {
+  padding-top: -2.5rem;
+  padding-bottom: 3rem;
+  text-align:center;
+  color: #333333;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.whyUs__iconColor {
+  color: #F8DF04;
+}
+.whyUs__h3 {
+  color: #4a4f55;
+  font-weight: 400;
+}
+.whyUs__h4 {
+  color: #F4876C;
+  text-transform: uppercase;
+}
+.whyUs__prg {
+   color: #767676;;
+}
+.whyUs__rating,.whyUs__h4,.whyUs__prg {
+  padding-top: 1rem;
+}
+.whyUs__quote {
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(2,1fr);
+  justify-items:center;
+}
+.whyUs__reviews{
+  width: 585px;
+  height: 253px;
+}
+@media all and (max-width:1199px){
+  .whyUs__quote {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
