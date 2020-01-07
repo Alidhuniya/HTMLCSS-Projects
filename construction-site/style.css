@@ -942,3 +942,39 @@ html {
   width:270px;
   height: 270px;
 }
+
+/* contact */
+.contact {
+  padding-bottom: 4rem;
+}
+iframe{
+  width:100%;
+}
+.contact__h1{
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1rem;
+  color: #364352;
+}
+.contact__address {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.contact__div1 {
+  margin-top: 1rem;
+ 
+}
+.contact__icons {
+  color: var(--primaryColor);
+}
+.contact__p {
+  color: var(--primaryColor);
+}
+.contact__prg {
+  padding-top: 1rem;
+  color: #333333;
+}
+.contact__p{
+  padding-top: 0.1rem;
+}
