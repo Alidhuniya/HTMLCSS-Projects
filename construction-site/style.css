@@ -945,7 +945,7 @@ html {
 
 /* contact */
 .contact {
-  padding-bottom: 4rem;
+ padding-bottom: 2rem;
 }
 iframe{
   width:100%;
@@ -977,4 +977,22 @@ iframe{
 }
 .contact__p{
   padding-top: 0.1rem;
+}
+/* footer */
+.ftr {
+  background: #313131;
+}
+.ftr__prg {
+  color:var(--primaryColor);
+  text-align: center;
+  padding: 2rem;
+}
+.ftr__icons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.ftr__icons--clr{
+  color: var(--primaryColor);
+  margin: 1rem;
 }
