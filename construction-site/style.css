@@ -906,3 +906,39 @@ html {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* team */
+.team{
+  padding-bottom: 4rem;
+}
+.team__heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  margin-top: -1rem;
+  width: 270px;
+  height: 100px;
+  background-color: #F7F7F7;
+}
+.team__p {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+}
+.team__icons i:hover{
+  color: var(--primaryColor);
+}
+.team__profile {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.team__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team__img {
+  width:270px;
+  height: 270px;
+}
