@@ -23,6 +23,11 @@ html {
   }
   
   :root {
-    --primaryColor: #ff5e14;
-    --secondaryColor: #262626;
+    --primaryColor: #393939;
+    --darkBlack: #232323;
+    --lightBlack: #666;
+    --pink:#FF506F;
+    --white: #fff;
+    --secondaryColor: #1A6CA1;
+
   }
