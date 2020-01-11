@@ -163,7 +163,6 @@ html {
   background: var(--white);
   border-radius: 5px;
   border: 1px solid #f7f7f7;
-  
 }
 .cards__row {
   padding-top: 1.5rem;
@@ -177,50 +176,84 @@ html {
   padding-top: 15px;
   color: var(--white);
   display: inline-block;
-   text-align: center;
+  text-align: center;
 }
 .cards__icon1 {
-  background: #1BDBAC;
+  background: #1bdbac;
 }
 .cards__href {
   text-decoration: none;
   color: var(--secondaryColor);
 }
 .cards__h4 {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    color: #111;
-    font-weight: 600;
-    line-height: 1.4;
-    letter-spacing: -.5px;
-  }
-  .cards__span {
-    padding-left: 2rem;
-  }
-  .cards__icon2 {
-    background: #F48687;
-  }
-  .cards__span1{
-    padding-left: 1rem;
-  }
-  .cards__span2 {
-    padding-left: 2rem;
-  }
-  .cards__span3{
-    padding-left: 1.3rem;
-  }
-  .cards__icon3 {
-    background: #FEA369;
-  }
-  .cards__icon4 {
-    background:var(--secondaryColor);
-  }
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #111;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+.cards__span {
+  padding-left: 2rem;
+}
+.cards__icon2 {
+  background: #f48687;
+}
+.cards__span1 {
+  padding-left: 1rem;
+}
+.cards__span2 {
+  padding-left: 2rem;
+}
+.cards__span3 {
+  padding-left: 1.3rem;
+}
+.cards__icon3 {
+  background: #fea369;
+}
+.cards__icon4 {
+  background: var(--secondaryColor);
+}
 
-  .cards{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-bottom: 5rem;
-    margin-top: -11.5rem;
-  }
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+  margin-top: -11.5rem;
+}
+/* section */
+
+.section__img {
+  padding-top: 4rem;
+  width: 504px;
+  height: 484px;
+  max-width: 100%;
+  border-radius: 05%;
+}
+.section {
+  background: var(--white);
+  padding-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section__right {
+  padding-top: 4rem;
+}
+.section__h2 {
+  color: var(--darkBlack);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  padding-bottom: 1.5rem;
+}
+.section__prg {
+  color: #666666;
+  padding-bottom: 2.3rem;
+  padding-top: 1.1rem;
+}
+.section__icons {
+  padding-right: 1rem;
+}
