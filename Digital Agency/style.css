@@ -257,3 +257,31 @@ html {
 .section__icons {
   padding-right: 1rem;
 }
+.section__2sectionp {
+  line-height: 1.5;
+}
+.section__bckgclr{
+  background: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+.section__acolor {
+  color: var(--pink);
+  line-height: 3;
+}
+.pricingButton {
+  padding-bottom: 2rem;
+ display: flex;
+ justify-content: center;
+}
+.middle-button {
+ font-size: 1.3rem;
+  background: var(--secondaryColor);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 12px;
+  padding: 17px 25px 17px 25px;
+    text-transform: uppercase;
+    border: 1px solid var(--secondaryColor);
+    
+}
