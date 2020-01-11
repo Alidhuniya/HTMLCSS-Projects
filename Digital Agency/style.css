@@ -101,7 +101,7 @@ html {
 /* featureImg */
 .featureImg {
   padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
   background: #f7f7f7;
   display: flex;
   justify-content: space-evenly;
@@ -113,7 +113,6 @@ html {
   background: var(--pink);
   text-decoration: none;
   padding: 14px 25px;
-  
 }
 .featureImg__href {
   color: var(--white);
@@ -129,7 +128,7 @@ html {
   letter-spacing: -2px;
   color: var(--secondaryColor);
 }
-.featureImg__p{
+.featureImg__p {
   padding-bottom: 3rem;
   line-height: 1.5;
 }
@@ -138,17 +137,90 @@ html {
 }
 .featureImg__image {
   max-width: 100%;
-  padding-top: 1.7rem;
+  padding-top: 1rem;
   border-radius: 10px;
 }
-@media all and (max-width:500px){
-  .featureImg__image{
-   width: 100%;
+@media all and (max-width: 500px) {
+  .featureImg__image {
+    width: 100%;
   }
 }
-@media all and (max-width:444px){
+@media all and (max-width: 444px) {
   .featureImg__h1 {
     font-size: 3rem;
     font-weight: 500;
   }
 }
+
+/* Cards */
+.cards__one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 270.2px;
+  background: var(--white);
+  border-radius: 5px;
+  border: 1px solid #f7f7f7;
+  
+}
+.cards__row {
+  padding-top: 1.5rem;
+  /* padding-left: 1.1rem; */
+}
+.cards__icons {
+  margin-top: 0rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  padding-top: 15px;
+  color: var(--white);
+  display: inline-block;
+   text-align: center;
+}
+.cards__icon1 {
+  background: #1BDBAC;
+}
+.cards__href {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+.cards__h4 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #111;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -.5px;
+  }
+  .cards__span {
+    padding-left: 2rem;
+  }
+  .cards__icon2 {
+    background: #F48687;
+  }
+  .cards__span1{
+    padding-left: 1rem;
+  }
+  .cards__span2 {
+    padding-left: 2rem;
+  }
+  .cards__span3{
+    padding-left: 1.3rem;
+  }
+  .cards__icon3 {
+    background: #FEA369;
+  }
+  .cards__icon4 {
+    background:var(--secondaryColor);
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    margin-top: -11.5rem;
+  }
