@@ -269,7 +269,7 @@ html {
   line-height: 3;
 }
 .pricingButton {
-  padding-bottom: 2rem;
+  padding-bottom: 3.3rem;
  display: flex;
  justify-content: center;
 }
@@ -284,4 +284,41 @@ html {
     text-transform: uppercase;
     border: 1px solid var(--secondaryColor);
     
+}
+.section2__h3 {
+text-align: center;
+color: var(--pink);
+font-weight: 400;
+}
+.section2__h2 {
+  text-align: center;
+    color: #111;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+}
+.section2 {
+  padding-bottom: 8rem;
+}
+.section2__icons {
+  color: var(--pink);
+}
+.section2__h1 {
+  color: var(--secondaryColor);
+  font-weight: 700;
+  font-size: 4rem;
+}
+.section2__row {
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2__div {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
