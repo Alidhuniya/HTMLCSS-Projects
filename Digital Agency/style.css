@@ -402,7 +402,6 @@ html {
 }
 .section4__a {
   padding-top: 6rem;
-  padding-bottom: 2rem;
   color: var(--pink);
   text-decoration: none;
   font-weight: 500;
@@ -430,4 +429,26 @@ html {
     text-align: center;
     padding-left: 0rem;
   }
+}
+
+/* section-5 */
+.section5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 480px;
+  padding-left: 3rem;
+}
+.section5__img {
+  border-radius: 50%;
+  padding-bottom: 1.5rem;
+}
+.section5__h1 {
+  font-weight: 500;
+  padding-bottom: 1.7rem;
+}
+.section5__p {
+  padding-bottom: 1rem;
 }
