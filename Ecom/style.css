@@ -1,0 +1,32 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+    font-size: 15px;
+    scroll-behavior: smooth;
+  }
+  * {
+    scroll-behavior: smooth;
+    scroll-margin-top: 120px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primaryColor: #0D1136;
+    --lightBlack: #77798C;
+    --green: #009E7F;
+    --lightWhite: #FAFAFA;
+    --darkWhite: #F7F7F7;
+    --secondaryColor: #fff;
+  }
