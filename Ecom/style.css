@@ -277,6 +277,7 @@ html {
 .banner {
   padding-top: 3rem;
   padding-bottom: 5rem;
+  border-bottom: 1px solid rgb(241, 241, 241);
 }
 .banner__images {
   display: flex;
@@ -342,4 +343,38 @@ html {
   margin: 0px 10px 10px;
   border: none;
   cursor: pointer;
+}
+
+/* container */
+.container {
+  border: 1px solid red;
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 20%; */
+  padding-bottom: 10rem;
+  
+}
+.container__cloth {
+  width: 220px;
+  height: 400px;
+  /* background: var(--secondaryColor); */
+}
+.container__imgContent {
+  width: 182px;
+  height: 182px;
+}
+.container__contents {
+  padding-top: 4.5rem;
+  
+  height: 100%;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas: "sidebar content";
+}
+.container__sidebar {
+  grid-area: sidebar;
+}
+.container__content {
+  grid-area: content;
+  background: var(--darkWhite);
 }
