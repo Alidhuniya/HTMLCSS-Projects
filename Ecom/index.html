@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/fc31dedf63.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Ecom App</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navHeader">
+      <!-- div-1 -->
+      <div class="navHeader__dv1">
+        <h3 class="navHeader__h30">Nep<span class="navHeader__span0">Bazar</span></h3>
+        <!-- dropdown -->
+        <div class="navHeader__language">
+          <i style="color: #009E7F;" class="fas fa-tshirt"></i>
+          <div class="navHeader__dropdown">
+            <button class="navHeader__dropbtn">
+              <h3 class="navHeader__h3">Clothing</h3>
+              <i
+                style="color: #009E7F;"
+                class="fas fa-arrow-alt-circle-down"
+              ></i>
+            </button>
+            <div
+              class="navHeader__dropdown-content navHeader__dropdown--hover"
+            >
+              <a href="#"><i style="color: #009E7F;" class="fas fa-tshirt navHeader__dropIcon"></i>Clothing</a>
+              <a href="#"><i class="fas fa-highlighter navHeader__dropIcon"></i>Makeup</a>
+              <a href="#"><i class="fas fa-shopping-bag navHeader__dropIcon"></i>Bags</a>
+            </div>
+          </div>
+        </div>
+        <!-- end-dropDown -->
+      </div>
+      <!-- End-div-1 -->
+      <div class="navHeader__dv2">
+        <form class="navHeader__form">
+          <span style="color: #77798C;" class="fas fa-search"></span>
+          <input
+            type="text"
+            value=""
+            placeholder="Search your products from here"
+            class="navHeader__input"
+          />
+        </form>
+      </div>
+      <div class="navHeader__dv3">
+              <h4 class="navHeader__h411">Offer</h4>
+            <i class="far fa-question-circle navHeader__h422"></i>
+            <h4 >Need Help</h4>
+         </div>
+    </div>
+    <!-- End-Navbar -->
     
-</body>
+  </body>
 </html>
