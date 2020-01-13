@@ -2,6 +2,8 @@
 ## Mini and Major projects in pure CSS using Flexbox, Grid, CSS variables, Methodology, CSS3 Features
 
 ## projects
+## [Ecom](https://alidhuniya.github.io/HTMLCSS-Projects/Ecom/)
+
 ## [Digital Agency](https://alidhuniya.github.io/HTMLCSS-Projects/Digital%20Agency/)
 
 ## [construction-site](https://alidhuniya.github.io/HTMLCSS-Projects/construction-site/)
