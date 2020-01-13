@@ -274,3 +274,17 @@ html {
         font-size: 2rem;
       }
 }
+/* banner */
+.banner {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.banner__images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.banner__img {
+    width:443px;
+    height: 206px;
+}
