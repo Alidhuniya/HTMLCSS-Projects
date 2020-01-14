@@ -1,0 +1,115 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  font-size: 15px;
+  scroll-behavior: smooth;
+  background: var(--darkWhite);
+}
+* {
+  scroll-behavior: smooth;
+  scroll-margin-top: 120px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primaryColor: #0d1136;
+  --lightBlack: #77798c;
+  --green: #009e7f;
+  --lightWhite: #fafafa;
+  --darkWhite: #f7f7f7;
+  --secondaryColor: #fff;
+}
+.body__h1 {
+  padding-top: 3rem;
+  text-align: center;
+  color: var(--lightBlack);
+}
+.Cards {
+  margin: 5rem auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 40px;
+  background-color: var(--secondaryColor);
+  width: 768px;
+  height: 100%;
+}
+.cards__single {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+img {
+  width: 251.4px;
+  height: 251px;
+}
+.cards__detail {
+  width: 390px;
+}
+h5 {
+  padding-top: 1rem;
+}
+p {
+  padding-top: 1.2rem;
+}
+
+.container__button {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-left: 4rem;
+  align-self: center;
+  color: var(--green);
+  width: 84.28px;
+  height: 36px;
+  padding-top: 0.5rem;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-weight: 700;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(247, 247, 247);
+  border-image: initial;
+  border-radius: 18px;
+}
+.container__button:hover {
+  color: var(--secondaryColor);
+  background: var(--green);
+}
+h6 {
+  padding-top: 1.3rem;
+  font-size: 2.3rem;
+  color: var(--green);
+}
+.container__span3 {
+  font-size: 13px;
+}
+
+@media all and (max-width:768px){
+    .cards__single {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+}
+@media all and (max-width:584px){
+    .cards__single {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+}
