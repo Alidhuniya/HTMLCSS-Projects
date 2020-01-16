@@ -4,7 +4,9 @@ html {
   margin: 0;
   padding: 0;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,19 +17,18 @@ html {
   width: 100%;
   max-width: 1300px;
   margin: 10px auto;
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   position: sticky;
 }
 
-.leftContainer {
+.Container {
   position: sticky;
   top: 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 42.5rem;
- 
   grid-gap: 30px;
 }
 
@@ -40,7 +41,6 @@ html {
 }
 
 .leftSidebar__avatar {
-  
   background-size: cover;
   width: 40%;
   border-radius: 50%;
@@ -70,7 +70,7 @@ html {
 .leftSidebar__slogan {
   position: absolute;
   top: 22.4rem;
-  color: #5A6879;
+  color: #5a6879;
 }
 .socialLinks {
   position: absolute;
@@ -82,30 +82,32 @@ html {
 .socialLinks a {
   padding: 0 9px;
 }
-
-
 .contact {
-  display: block;
-  text-align: justify;
   position: absolute;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   top: 30rem;
   width: 100%;
   background-color: rgb(241, 242, 243);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 5rem;
+}
+.contact__git-container {
+  padding-top: 0.7rem;
 }
 
-.contact__location-container, .contact__git-container {
-  margin: 10px 29%;
-}
-
-.contact__location-container--modifier, .contact__git-container--modifier {
+.contact__location-container--modifier,
+.contact__git-container--modifier {
   text-decoration: none;
   color: rgb(84, 98, 117);
   font-size: small;
   position: relative;
-  
+
   text-transform: capitalize;
-  
-} 
+}
 
 .email-container {
   position: absolute;
@@ -126,92 +128,7 @@ html {
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 1230px) {
-  body {
-    height: auto;
-    min-height: 1190px !important;
-    margin: 05%;
-  }
-
-  .leftContainer {
-    position: sticky;
-    top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 37rem;
-    grid-gap: 30px;
-    background-color: #ffffff;
-    border-radius: 20px;
-  }
-
-  .leftSidebar__avatar {
-    
-    background-size: cover;
-    width: 6.7rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -28rem;
-  }
-
-  .contact {
-    display: block;
-    text-align: justify;
-    position: absolute;
-    top: 29rem;
-    width: 100%;
-    background-color: rgb(241, 242, 243);
-  }
-  
-  .contact__location-container, .contact__git-container {
-    margin: 10px 43%;
-  }
-
-  .email-container__email-contact {
-    color: rgb(215, 232, 252);
-    text-align: center;
-    padding: 10px 18px;
-    background: #256af3;
-    background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
-    background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
-    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
-    border-radius: 24px;
-    padding: 12px 28px;
-    display: flex;
-    justify-content: center;
-    margin-top: -5.8rem;
-    position: static;
-    margin-left: -44px;
-  
-  }
+.email-container__email-contact:hover {
+  color: #fff;
 }
-@media all and () {
-
-}
-
-@media screen and  (max-width: 1066px) {
-  .contact {
-    display: block;
-    padding: 20px 0; 
- 
-    border-radius: 0 0 20px 20px;
-    
-  }
-  .email-container__email-contact {
-    color: rgb(215, 232, 252);
-    text-align: center;
-    padding: 10px 18px;
-    background: #256af3;
-    background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
-    background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
-    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
-    border-radius: 24px;
-    padding: 12px 28px;
-    display: flex;
-    justify-content: center;
-    margin-top: -13.9rem;
-    position: static;
-    margin-left: -7px;
-    
-  }
- 
-}
+/* media-Query */
