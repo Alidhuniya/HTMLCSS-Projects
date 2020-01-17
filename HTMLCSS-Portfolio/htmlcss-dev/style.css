@@ -19,7 +19,7 @@ html {
   max-width: 1300px;
   margin: 10px auto;
   height: auto;
-  
+
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -30,8 +30,7 @@ html {
   top: 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 42.5rem;
-  /* height: 100%; */
+  height: 100%;
   grid-gap: 30px;
 }
 
@@ -181,7 +180,7 @@ html {
   font-weight: 600;
 }
 .rightContainer__span1 {
-  border-bottom: 3px solid #F785ED;
+  border-bottom: 3px solid #f785ed;
 }
 /* cards */
 .rightContainer__h2 {
@@ -193,12 +192,12 @@ html {
 }
 .rightContainer__card {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   grid-gap: 1.1rem;
 }
 .rightContainer__card1 {
- margin-top: 1rem;
+  margin-top: 1rem;
   display: flex;
   padding: 38px 30px;
   background-color: rgb(255, 2552, 255);
@@ -216,14 +215,10 @@ html {
   color: rgb(47, 60, 78);
   font-weight: 400;
 }
-.rightContainer__p1{
+.rightContainer__p1 {
   color: rgb(110, 126, 145);
   padding-top: 0.3rem;
 }
-
-
-
-
 
 @media only screen and (max-width: 1230px) {
   body {
@@ -247,14 +242,12 @@ html {
     padding-bottom: 50rem;
   }
 
-
   .leftSidebar__avatar {
-    
     background-size: cover;
     width: 6.7rem;
     border-radius: 50%;
     position: absolute;
-    top: 10rem;
+    margin-top: 35rem;
   }
 
   .contact {
@@ -271,8 +264,9 @@ html {
     top: 32rem;
     padding-left: 3rem;
   }
-  
-  .contact__location-container, .contact__git-container {
+
+  .contact__location-container,
+  .contact__git-container {
     margin: 10px 43%;
   }
 
@@ -291,7 +285,6 @@ html {
     margin-top: -5.8rem;
     position: static;
     margin-left: -44px;
-  
   }
 
   .rightContainer {
@@ -299,16 +292,14 @@ html {
     border-radius: 1rem;
     position: relative;
     top: 40rem;
-}
+  }
 }
 
-@media screen and  (max-width: 1066px) {
+@media screen and (max-width: 1066px) {
   .contact {
     display: block;
-    padding: 20px 0; 
- 
+    padding: 20px 0;
     border-radius: 0 0 20px 20px;
-    
   }
   .email-container {
     position: absolute;
@@ -329,13 +320,10 @@ html {
     margin-top: -13.9rem;
     position: static;
     margin-left: -7px;
-    
   }
- 
 }
 
-
-@media all and (max-width: 900px){
+@media all and (max-width: 900px) {
   .contact {
     margin-top: 1rem;
     padding-bottom: 0.3rem;
@@ -350,11 +338,11 @@ html {
     text-align: center;
   }
 }
-@media all and (min-width:320px) and (max-width:400px){
+@media all and (min-width: 320px) and (max-width: 400px) {
   .rightContainer__nav {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
     padding-left: 4rem;
     padding-bottom: 1rem;
@@ -365,7 +353,7 @@ html {
     margin-top: 1rem;
     padding-left: 0rem;
   }
-  .leftSidebar__avatar{
+  .leftSidebar__avatar {
     margin-right: 19rem;
   }
   .leftSidebar h2 {
@@ -374,7 +362,8 @@ html {
   .leftSidebar__title {
     margin-left: -6rem;
   }
-  .socialLinks, .leftSidebar__slogan {
+  .socialLinks,
+  .leftSidebar__slogan {
     margin-left: -9rem;
   }
   .email-container {
@@ -398,4 +387,5 @@ html {
     width: 320px;
     height: 130px;
     border-radius: 10px;
+  }
 }
