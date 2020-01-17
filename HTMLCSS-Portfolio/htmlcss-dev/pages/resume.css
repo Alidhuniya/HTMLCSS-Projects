@@ -392,6 +392,18 @@ html {
   }
   
 }
+@media all and (max-width:600px){
+    .resume__container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .resume__exp {
+        padding-top: 1.5rem;
+        padding-left: 0rem;
+    }
+}
 @media all and (min-width: 320px) and (max-width: 400px) {
   .rightContainer__nav {
     display: flex;
@@ -408,23 +420,25 @@ html {
     padding-left: 0rem;
   }
   .leftSidebar__avatar {
-    margin-right: 19rem;
+    margin-right: 10rem;
   }
   .leftSidebar h2 {
-    margin-left: -4rem;
+    margin-left: -2rem;
   }
   .leftSidebar__title {
-    margin-left: -6rem;
+    margin-left: -4rem;
   }
   .socialLinks,
   .leftSidebar__slogan {
-    margin-left: -9rem;
+    margin-left: -7rem;
   }
   .email-container {
-    margin-left: -10rem;
+    margin-left: -8rem;
   }
   .contact {
-    margin-left: -4rem;
+    margin-left: 0rem;
   }
  
 }
+
+
