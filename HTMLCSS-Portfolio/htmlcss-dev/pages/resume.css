@@ -1,122 +1,336 @@
 html {
-    font-family: sans-serif;
-    background: linear-gradient(-225deg, #7742b2 0%, #f180ff 52%, #fd8bd9 100%);
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
+  font-family: sans-serif;
+  background: linear-gradient(-225deg, #7742b2 0%, #f180ff 52%, #fd8bd9 100%);
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 10px auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.Container {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 43rem;
+  grid-gap: 30px;
+}
+
+.leftSidebar {
+  background-color: rgb(250, 250, 251);
+  border-radius: 0.5rem;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.leftSidebar__avatar {
+  background-size: cover;
+  width: 40%;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -33rem;
+  bottom: 0;
+  margin: auto auto;
+}
+.leftSidebar h2 {
+  position: absolute;
+  top: 10rem;
+  color: rgb(53, 68, 89);
+}
+
+.leftSidebar__title {
+  position: absolute;
+  top: 13.4rem;
+  background-color: rgb(236, 236, 244);
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: rgb(76, 90, 109);
+  text-transform: capitalize;
+}
+
+.leftSidebar__slogan {
+  position: absolute;
+  top: 22.4rem;
+  color: #5a6879;
+}
+.socialLinks {
+  position: absolute;
+  top: 18.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.socialLinks a {
+  padding: 0 9px;
+}
+.contact {
+  position: absolute;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  top: 30rem;
+  width: 100%;
+  background-color: rgb(241, 242, 243);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 5rem;
+}
+.contact__git-container {
+  padding-top: 0.7rem;
+}
+
+.contact__location-container--modifier,
+.contact__git-container--modifier {
+  text-decoration: none;
+  color: rgb(84, 98, 117);
+  font-size: small;
+  position: relative;
+
+  text-transform: capitalize;
+}
+
+.email-container {
+  position: absolute;
+  top: 40rem;
+}
+
+.email-container__email-contact {
+  color: rgb(215, 232, 252);
+  text-align: center;
+  padding: 10px 18px;
+  background: #256af3;
+  background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
+  background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
+  background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+  border-radius: 24px;
+  padding: 12px 48px;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+.email-container__email-contact:hover {
+  color: #fff;
+}
+
+/* right-container */
+
+.rightContainer {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.rightContainer__top {
+  background-color: #fff;
+  border-radius: 1rem 1rem 0 0;
+  padding-top: 3rem;
+  padding-bottom: 4.1rem;
+}
+
+.rightContainer__nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-bottom: 1rem;
+}
+.rightContainer__li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: #2c3335;
+  font-weight: 550;
+}
+.rightContainer__li:hover {
+  color: #2c3335;
+  font-weight: 400;
+}
+.rightContainer__btmBorder {
+  border-bottom: 3px solid #0424f2;
+}
+
+/* resume */
+.resume__icons {
+  color: rgb(71, 79, 247);
+}
+.resume {
+  margin-top: 1rem;
+}
+.resume__container {
+  display: flex;
+  padding-left: 2.5rem;
+}
+.resume__exp {
+  padding-left: 18rem;
+}
+.resume__span {
+  color: #354459;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.resume__date,
+.resume__desc {
+  padding-top: 1rem;
+}
+
+.skills {
+  background-color: #fff;
+  color: #161616;
+  width: 300px;
+  position: relative;
+  padding-top: 0rem;
+  margin: 20px auto;
+  font-size: 12px;
+  padding-left: 5rem;
+}
+.skills__h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+ul > li {
+  list-style: none;
+  margin-bottom: 4rem;
+  background: #ececf4;
+  height: 5px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+ul > li em {
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  position: relative;
+  top: -30px;
+}
+ul > li span {
+  height: 1px;
+  margin: 2px 0;
+  background: rgb(71, 79, 247);
+  position: absolute;
+  box-shadow: 0px 0px 10px 1px rgb(71, 79, 247);
+}
+.html5 {
+  width: 70%;
+  animation: html5 2s ease-out;
+}
+.css3 {
+  width: 55%;
+  animation: css3 2s ease-out;
+}
+.sass {
+  width: 50%;
+  animation: sass 2s ease-out;
+}
+.git {
+  width: 60%;
+  animation: git 2s ease-out;
+}
+@keyframes html5 {
+  0% {
+    width: 0px;
   }
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  100% {
+    width: 70%;
   }
-  
-  .wrapper {
-    width: 100%;
-    max-width: 1300px;
-    margin: 10px auto;
+}
+@keyframes css3 {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes sass {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  body {
     height: auto;
-  
-    display: flex;
-    flex-direction: column;
-    position: sticky;
+    min-height: 1190px !important;
+    margin: 05%;
   }
-  
+
   .Container {
     position: sticky;
-    top: 0;
+    top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 43rem;
+    grid-template-columns: 1fr;
+    height: 37rem;
     grid-gap: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
   }
-  
-  .leftSidebar {
-  
-    background-color: rgb(250, 250, 251);
-    border-radius: 0.5rem;
-    position: relative;
-    justify-content: center;
-    display: flex;
+
+  .wrapper {
+    padding-bottom: 50rem;
   }
-  
+
   .leftSidebar__avatar {
     background-size: cover;
-    width: 40%;
+    width: 6.7rem;
     border-radius: 50%;
     position: absolute;
-    right: 0;
-    left: 0;
-    top: -33rem;
-    bottom: 0;
-    margin: auto auto;
+    margin-top: 35rem;
   }
-  .leftSidebar h2 {
-    position: absolute;
-    top: 10rem;
-    color: rgb(53, 68, 89);
-  }
-  
-  .leftSidebar__title {
-    position: absolute;
-    top: 13.4rem;
-    background-color: rgb(236, 236, 244);
-    padding: 10px 16px;
-    border-radius: 20px;
-    color: rgb(76, 90, 109);
-    text-transform: capitalize;
-  }
-  
-  .leftSidebar__slogan {
-    position: absolute;
-    top: 22.4rem;
-    color: #5a6879;
-  }
-  .socialLinks {
-    position: absolute;
-    top: 18.5rem;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .socialLinks a {
-    padding: 0 9px;
-  }
+
   .contact {
+    display: block;
+    text-align: justify;
     position: absolute;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    top: 30rem;
+    margin-top: 1rem;
+    top: 29rem;
     width: 100%;
     background-color: rgb(241, 242, 243);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: baseline;
-    padding-left: 5rem;
   }
-  .contact__git-container {
-    padding-top: 0.7rem;
-  }
-  
-  .contact__location-container--modifier,
-  .contact__git-container--modifier {
-    text-decoration: none;
-    color: rgb(84, 98, 117);
-    font-size: small;
-    position: relative;
-  
-    text-transform: capitalize;
-  }
-  
   .email-container {
     position: absolute;
-    top: 40rem;
+    top: 32rem;
+    padding-left: 3rem;
   }
-  
+
+  .contact__location-container,
+  .contact__git-container {
+    margin: 10px 43%;
+  }
+
   .email-container__email-contact {
     color: rgb(215, 232, 252);
     text-align: center;
@@ -126,318 +340,100 @@ html {
     background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
     background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
     border-radius: 24px;
-    padding: 12px 48px;
-    text-decoration: none;
-    margin-top: 2rem;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: center;
+    margin-top: -5.8rem;
+    position: static;
+    margin-left: -44px;
   }
-  
-  .email-container__email-contact:hover {
-    color: #fff;
-  }
-  
-  /* right-container */
-  
+
   .rightContainer {
     background-color: #fff;
     border-radius: 1rem;
+    position: relative;
+    top: 40rem;
   }
-  .rightContainer__top {
-    background-color: #fff;
-    border-radius: 1rem 1rem 0 0;
-    padding-top: 3rem;
-    padding-bottom: 4.1rem;
+}
+
+@media screen and (max-width: 1066px) {
+  .contact {
+    display: block;
+    padding: 20px 0;
+    border-radius: 0 0 20px 20px;
   }
-  
-  .rightContainer__nav {
+  .email-container {
+    position: absolute;
+    top: 39rem;
+  }
+  .email-container__email-contact {
+    color: rgb(215, 232, 252);
+    text-align: center;
+    padding: 10px 18px;
+    background: #256af3;
+    background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
+    background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
+    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+    border-radius: 24px;
+    padding: 12px 28px;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-bottom: 1rem;
+    justify-content: center;
+    margin-top: -13.9rem;
+    position: static;
+    margin-left: -7px;
   }
-  .rightContainer__li {
-    list-style: none;
-    text-decoration: none;
-    font-size: 2.1rem;
-    color: #2c3335;
-    font-weight: 550;
+}
+
+@media all and (max-width: 900px) {
+  .contact {
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
   }
-  .rightContainer__li:hover {
-    color: #2c3335;
-    font-weight: 400;
-  }
-  .rightContainer__btmBorder {
-    border-bottom: 3px solid #0424f2;
-  }
-  
-  /* resume */
-  .resume__icons {
-      color: rgb(71, 79, 247);
-  }
-  .resume {
-      margin-top: 1rem;
-  }
+}
+@media all and (max-width: 600px) {
   .resume__container {
-      display: flex;
-      padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .resume__exp {
-      padding-left: 18rem;
+    padding-top: 1.5rem;
+    padding-left: 0rem;
   }
-  .resume__span {
-      color: #354459;
-      font-size: 1.7rem;
-      font-weight: bold;
+}
+@media all and (min-width: 320px) and (max-width: 400px) {
+  .rightContainer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
   }
-  .resume__date,.resume__desc {
-      padding-top: 1rem;
+  .Container {
+    width: 320px;
+    max-width: 400px;
+    margin-top: 1rem;
+    padding-left: 0rem;
   }
-  
-    .skills {
-       background-color: #fff;; 
-      color: #161616;
-      width: 300px;
-      position: relative;
-      padding-top: 0rem;
-      margin: 20px auto;
-      font-size: 12px;
-      padding-left: 5rem;
-    }
-    .skills__h2 {
-      font-size: 24px;
-      margin-bottom: 25px;
-    }
-   
-    ul > li {
-      list-style: none;
-      margin-bottom:4rem;
-      background: #ECECF4;
-      height: 5px;
-      border-radius: 3px;
-      border-left: 1px solid #111;
-      border-top: 1px solid #111;
-      border-right: 1px solid #333;
-      border-bottom: 1px solid #333;
-    }
-    ul > li em {
-      font-family: 'Exo', sans-serif;
-      font-size: 18px;
-      position: relative;
-      top: -30px;
-    }
-    ul > li span {
-      height: 1px;
-      margin: 2px 0;
-      background: rgb(71, 79, 247);
-      position: absolute;
-      box-shadow: 0px 0px 10px 1px rgb(71, 79, 247);
-    }
-    .html5 {
-      width: 70%;
-      animation: html5 2s ease-out;
-    }
-    .css3 {
-      width: 55%;
-      animation: css3 2s ease-out;
-    }
-    .sass {
-      width: 50%;
-      animation: sass 2s ease-out;
-    }
-    .git {
-      width: 60%;
-      animation: git 2s ease-out;
-    }
-    @keyframes html5 {
-      0% {
-        width: 0px;
-      }
-      100% {
-        width: 70%;
-      }
-    }
-    @keyframes css3 {
-      0% {
-        width: 0px;
-      }
-      100% {
-        width: 55%;
-      }
-    }
-    @keyframes sass {
-      0% {
-        width: 0px;
-      }
-      100% {
-        width: 50%;
-      }
-    }
-    @keyframes git {
-      0% {
-        width: 0px;
-      }
-      100% {
-        width: 60%;
-      }
-    }
-    
-  
-  @media only screen and (max-width: 1230px) {
-    body {
-      height: auto;
-      min-height: 1190px !important;
-      margin: 05%;
-    }
-  
-    .Container {
-      position: sticky;
-      top: 2rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      height: 37rem;
-      grid-gap: 30px;
-      background-color: #ffffff;
-      border-radius: 20px;
-    }
-  
-    .wrapper {
-      padding-bottom: 50rem;
-    }
-  
-    .leftSidebar__avatar {
-      background-size: cover;
-      width: 6.7rem;
-      border-radius: 50%;
-      position: absolute;
-      margin-top: 35rem;
-    }
-  
-    .contact {
-      display: block;
-      text-align: justify;
-      position: absolute;
-      margin-top: 1rem;
-      top: 29rem;
-      width: 100%;
-      background-color: rgb(241, 242, 243);
-    }
-    .email-container {
-      position: absolute;
-      top: 32rem;
-      padding-left: 3rem;
-    }
-  
-    .contact__location-container,
-    .contact__git-container {
-      margin: 10px 43%;
-    }
-  
-    .email-container__email-contact {
-      color: rgb(215, 232, 252);
-      text-align: center;
-      padding: 10px 18px;
-      background: #256af3;
-      background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
-      background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
-      background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
-      border-radius: 24px;
-      padding: 12px 28px;
-      display: flex;
-      justify-content: center;
-      margin-top: -5.8rem;
-      position: static;
-      margin-left: -44px;
-    }
-  
-    .rightContainer {
-      background-color:#fff;
-      border-radius: 1rem;
-      position: relative;
-      top: 40rem;
-    }
+  .leftSidebar__avatar {
+    margin-right: 10rem;
   }
-  
-  @media screen and (max-width: 1066px) {
-    .contact {
-      display: block;
-      padding: 20px 0;
-      border-radius: 0 0 20px 20px;
-    }
-    .email-container {
-      position: absolute;
-      top: 39rem;
-    }
-    .email-container__email-contact {
-      color: rgb(215, 232, 252);
-      text-align: center;
-      padding: 10px 18px;
-      background: #256af3;
-      background: -moz-linear-gradient(top, #256af3 0%, #3488f4 100%);
-      background: -webkit-linear-gradient(top, #256af3 0%, #3488f4 100%);
-      background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
-      border-radius: 24px;
-      padding: 12px 28px;
-      display: flex;
-      justify-content: center;
-      margin-top: -13.9rem;
-      position: static;
-      margin-left: -7px;
-    }
+  .leftSidebar h2 {
+    margin-left: -2rem;
   }
-  
-  @media all and (max-width: 900px) {
-    .contact {
-      margin-top: 1rem;
-      padding-bottom: 0.3rem;
-    }
-    
+  .leftSidebar__title {
+    margin-left: -4rem;
   }
-  @media all and (max-width:600px){
-      .resume__container {
-          display: flex;
-          flex-direction: column;
-          padding-left: 2rem;
-          padding-right: 2rem;
-      }
-      .resume__exp {
-          padding-top: 1.5rem;
-          padding-left: 0rem;
-      }
+  .socialLinks,
+  .leftSidebar__slogan {
+    margin-left: -7rem;
   }
-  @media all and (min-width: 320px) and (max-width: 400px) {
-    .rightContainer__nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding-left: 4rem;
-      padding-bottom: 1rem;
-    }
-    .Container {
-      width: 320px;
-      max-width: 400px;
-      margin-top: 1rem;
-      padding-left: 0rem;
-    }
-    .leftSidebar__avatar {
-      margin-right: 10rem;
-    }
-    .leftSidebar h2 {
-      margin-left: -2rem;
-    }
-    .leftSidebar__title {
-      margin-left: -4rem;
-    }
-    .socialLinks,
-    .leftSidebar__slogan {
-      margin-left: -7rem;
-    }
-    .email-container {
-      margin-left: -8rem;
-    }
-    .contact {
-      margin-left: 0rem;
-    }
-   
+  .email-container {
+    margin-left: -8rem;
   }
-  
+  .contact {
+    margin-left: 0rem;
+  }
+}
