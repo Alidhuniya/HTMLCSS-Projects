@@ -3,8 +3,8 @@
 
 # projects
 
-## [Mars-weather-App by kevin Powell](https://alidhuniya.github.io/Design-to-Code/Mars-Weatherapp-Kevin/)
-## [Design to code](https://alidhuniya.github.io/Design-to-Code/Kevin-powell/)
+## [Mars-weather-App by kevin Powell](https://alidhuniya.github.io/Design-to-Code-html-css/Mars-Weatherapp-Kevin/)
+## [Design to code](https://alidhuniya.github.io/Design-to-Code-html-css/Kevin-powell/)
 ## [SASS project-Band](https://alidhuniya.github.io/musician-band/)
 ## [portfolio](https://alidhuniya.github.io/HTMLCSS-Projects/HTMLCSS-Portfolio/htmlcss-dev/)
 ## [Ecom](https://alidhuniya.github.io/HTMLCSS-Projects/Ecom/)
