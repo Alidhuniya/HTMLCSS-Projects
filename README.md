@@ -3,6 +3,7 @@
 
 # projects
 
+## [covID-19-2020](https://alidhuniya.github.io/Design-to-Code-html-css/covID-19-2020/)
 ## [Food-farming](https://alidhuniya.github.io/Design-to-Code-html-css/Food-farming/)
 ## [Mars-weather-App by kevin Powell](https://alidhuniya.github.io/Design-to-Code-html-css/Mars-Weatherapp-Kevin/)
 ## [Design to code](https://alidhuniya.github.io/Design-to-Code-html-css/Kevin-powell/)
