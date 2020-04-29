@@ -1,7 +1,14 @@
 # HTMLCSS-Projects
 ## Mini and Major projects in pure CSS using Flexbox, Grid, CSS variables, Methodology, CSS3 Features
 
-## projects
+# projects
+
+## [covID-19-2020](https://alidhuniya.github.io/Design-to-Code-html-css/covID-19-2020/)
+## [Food-farming](https://alidhuniya.github.io/Design-to-Code-html-css/Food-farming/)
+## [Mars-weather-App by kevin Powell](https://alidhuniya.github.io/Design-to-Code-html-css/Mars-Weatherapp-Kevin/)
+## [Design to code](https://alidhuniya.github.io/Design-to-Code-html-css/Kevin-powell/)
+## [SASS project-Band](https://alidhuniya.github.io/musician-band/)
+## [portfolio](https://alidhuniya.github.io/HTMLCSS-Projects/HTMLCSS-Portfolio/htmlcss-dev/)
 ## [Ecom](https://alidhuniya.github.io/HTMLCSS-Projects/Ecom/)
 
 ## [Digital Agency](https://alidhuniya.github.io/HTMLCSS-Projects/Digital%20Agency/)
