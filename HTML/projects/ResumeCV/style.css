@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.name {
+  margin-left: 690px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 30%;
+}
+
+.cent {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  display: inline-block;
+  font-weight: 400;
+  background: rgb(133, 133, 133);
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+}

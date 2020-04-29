@@ -1,0 +1,27 @@
+.navbar__logoImg {
+    width: 140px;
+    height: 75px;
+    transition: 0.5s;
+  }
+  
+  .navbar__li {
+    list-style: none;
+  }
+  
+  .navbar__githubLogo {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+  }
+  
+  .navbar__ul {
+    /* position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    
+    
+  }
+

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.dev {
+  float: left;
+  font-size: 30px;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+.nav li {
+  display: inline;
+  float: right;
+  margin-top: -25px;
+  margin-right: 30px;
+  padding: 10px;
+}
+.nav li a {
+  text-decoration: none;
+  color: #f3b431;
+  font-size: 25px;
+  background-color: #6c5ce7;
+}
+.blck {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+h4 {
+  font-size: 25px;
+}
+a {
+  font-size: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}

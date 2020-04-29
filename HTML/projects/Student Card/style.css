@@ -1,0 +1,21 @@
+body {
+    margin: 0px 600px;
+    padding: 0;
+    border: 3px solid #212121;
+    
+}
+
+.hdr {
+    text-align: center;
+    padding:0;
+}
+
+img {
+    height: 15%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle 
+}

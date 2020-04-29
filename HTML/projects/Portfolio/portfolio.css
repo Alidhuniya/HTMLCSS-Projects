@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.hdr {
+    position: absolute'
+}
+
+.head {
+    float: left;
+    margin-top: 1px;
+    border: 2px solid #74B9FF;
+    background: #74B9FF;
+    font-size: 50px;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top:0;/* Position the navbar at the top of the page */
+  
+
+}
+
+.nav li  {
+    display: inline;
+    float: right;
+    margin-top: -25px;
+    margin-right: 30px;
+    padding: 10px;
+}
+.nav li a {
+    text-decoration: none;
+    color:#F3B431;
+    font-size: 25px;
+    background-color: #6c5ce7;
+
+}
+.blck {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top:0;/* Position the navbar at the top of the page */
+    width: 100%;
+}
+img{
+  width: 100%;
+}
+
+h4{
+    text-align: center;
+    font-size: 2rem;
+    color: #6c5ce7;
+}
+.me{
+    font-weight: 100;
+    font-size: 18px;
+}
+.skls {
+    text-align: center;
+    text-shadow: #6c5ce7;
+    font-size: 2rem;
+
+}
+li {
+
+    list-style-type: none;
+    text-align: center;
+    font-size: 3rem;
+    color: #74B9FF;
+}
+.prjt {
+    text-align: center;
+    font-size: 2rem;
+    color: #6c5ce7;
+}
+.social a {
+ display: inline;
+ padding: 10px;
+ margin-right: 300px;
+ text-decoration: none;
+ font-size: 30px;
+}
