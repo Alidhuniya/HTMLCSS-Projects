@@ -140,16 +140,57 @@ html {
   padding-top: 1rem;
   border-radius: 10px;
 }
+
 @media all and (max-width: 500px) {
   .featureImg__image {
     width: 100%;
   }
+  .featureImg__left {
+     
+    padding-bottom: 2rem;
 }
+.section__right {
+    
+  padding-left: 2rem;
+}
+}
+
+
 @media all and (max-width: 444px) {
   .featureImg__h1 {
     font-size: 3rem;
     font-weight: 500;
   }
+}
+
+@media all and (max-width: 430px) {
+.featureImg__left {
+   
+    padding-left: 2rem;
+}
+
+.section4__h4 {
+ 
+  padding-left: 2rem;
+}
+
+.section7__dv {
+  margin: 0 auto;
+  width: auto;
+}
+
+
+
+.posts__description {
+  
+  padding: 1rem;
+  text-align: center;
+}
+
+.ftr__div3 {
+  padding-left: 1rem;
+}
+
 }
 
 /* Cards */
@@ -602,7 +643,11 @@ html {
 .posts__avatarInfo > * {
   margin: 1px 3px 8px 0px;
 }
-
+@media all and (max-width: 430px) {
+  .posts__heading {
+    padding: 1.429rem 1.429rem 1.429rem 4rem;
+  }
+}
 /* footer */
 .ftr {
   margin: 0;
@@ -715,3 +760,6 @@ html {
     padding-right: 0rem;
   }
 }
+
+
+
