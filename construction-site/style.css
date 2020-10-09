@@ -281,6 +281,8 @@ html {
   }
 }
 
+
+
 /* break-2 */
 @media all and (min-width: 768px) and (max-width: 1199px) {
   .featureImg__image {
@@ -995,4 +997,34 @@ iframe{
 .ftr__icons--clr{
   color: var(--primaryColor);
   margin: 1rem;
+}
+
+@media all and (max-width: 500px) {
+  .featureImg__image {
+    max-width: 100%;
+    width: 500px;
+  }
+
+  .about__middle {
+    margin-left: -10rem;
+  }
+
+  .about__img {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .about__quote {
+    line-height: 23px;
+    font-style: italic;
+    padding: 15px 0 0;
+    margin-left: -11rem;
+    max-width: 33ch;
+}
+
+.features1__img {
+  overflow: hidden;
+  height: 100%;
+}
 }
