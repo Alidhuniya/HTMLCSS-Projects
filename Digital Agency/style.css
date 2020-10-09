@@ -39,6 +39,15 @@ html {
   z-index: 1;
 }
 
+@media all and (max-width: 600px) {
+  .wrapper {
+    position: relative;
+    top: none;
+    z-index: none;
+  }
+  
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
