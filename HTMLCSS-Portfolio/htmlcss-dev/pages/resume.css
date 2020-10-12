@@ -208,78 +208,20 @@ html {
   margin-bottom: 25px;
 }
 
-ul > li {
-  list-style: none;
-  margin-bottom: 4rem;
-  background: #ececf4;
-  height: 5px;
-  border-radius: 3px;
-  border-left: 1px solid #111;
-  border-top: 1px solid #111;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
+
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
 }
-ul > li em {
-  font-family: "Exo", sans-serif;
-  font-size: 18px;
-  position: relative;
-  top: -30px;
+
+.skills__container li {
+  list-style: circle;
+  font-size: 1.3rem;
+  margin-top: 3rem;
 }
-ul > li span {
-  height: 1px;
-  margin: 2px 0;
-  background: rgb(71, 79, 247);
-  position: absolute;
-  box-shadow: 0px 0px 10px 1px rgb(71, 79, 247);
-}
-.html5 {
-  width: 70%;
-  animation: html5 2s ease-out;
-}
-.css3 {
-  width: 55%;
-  animation: css3 2s ease-out;
-}
-.sass {
-  width: 50%;
-  animation: sass 2s ease-out;
-}
-.git {
-  width: 60%;
-  animation: git 2s ease-out;
-}
-@keyframes html5 {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes css3 {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 55%;
-  }
-}
-@keyframes sass {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes git {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60%;
-  }
-}
+
 
 @media only screen and (max-width: 1230px) {
   body {
